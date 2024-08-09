@@ -4,7 +4,7 @@ export const infoFormBaseObj = {
   phone: "",
 };
 
-export const plans: PlanType[] = [
+export const plans: PlanObjType[] = [
   {
     name: "Arcade",
     img: "/assets/icon-arcade-e118291f.svg",
