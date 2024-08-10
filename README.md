@@ -1,6 +1,6 @@
 # Frontend Mentor - Multi-step form solution
 
-This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). Frontend Mentor challenges help you improve your coding skills in frontend by building realistic projects.
 
 ## Table of contents
 
@@ -26,12 +26,11 @@ Users should be able to:
 
 | Mobile layout                                                                       | Desktop layout                                                                        |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| <a href="./assets/screenshots/mobile.png"><img src="./assets/screenshots/mobile-thumb.png" /></a> | <a href="./assets/screenshots/desktop.png"><img src="./assets/screenshots/desktop-thumb.png" /></a> |
+| <a href="https://frontend-mentor-multi-step-form-psi.vercel.app/assets/screenshots/mobile.png"><img src="https://frontend-mentor-multi-step-form-psi.vercel.app/assets/screenshots/mobile-thumb.png" /></a> | <a href="https://frontend-mentor-multi-step-form-psi.vercel.app/assets/screenshots/desktop.png"><img src="https://frontend-mentor-multi-step-form-psi.vercel.app/assets/screenshots/desktop-thumb.png" /></a> |
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://multi-step-form-fm.vercel.app/](https://multi-step-form-fm.vercel.app/)
+- Live Site URL: [https://frontend-mentor-multi-step-form-psi.vercel.app/](https://frontend-mentor-multi-step-form-psi.vercel.app/)
 
 ## My process
 
