@@ -9,10 +9,10 @@ export const plans: PlanObjType[] = [
     name: "Arcade",
     img: "/assets/icon-arcade-e118291f.svg",
     monthly: {
-      payment: "9/mo",
+      price: 9,
     },
     yearly: {
-      payment: "90/yr",
+      price: 90,
       free: "2 months free",
     },
   },
@@ -20,10 +20,10 @@ export const plans: PlanObjType[] = [
     name: "Advanced",
     img: "/assets/icon-advanced-66ce2237.svg",
     monthly: {
-      payment: "12/mo",
+      price: 12,
     },
     yearly: {
-      payment: "120/yr",
+      price: 120,
       free: "2 months free",
     },
   },
@@ -31,11 +31,48 @@ export const plans: PlanObjType[] = [
     name: "Pro",
     img: "/assets/icon-pro-8d9f4718.svg",
     monthly: {
-      payment: "15/mo",
+      price: 15,
     },
     yearly: {
-      payment: "150/yr",
+      price: 150,
       free: "2 months free",
+    },
+  },
+];
+
+
+export const addOnItemList: AddOnItemType[] = [
+  {
+    name: "Online service",
+    subText: "Access to multiplayer games",
+    isSelected: false,
+    monthly: {
+      price: 1,
+    },
+    yearly: {
+      price: 10,
+    },
+  },
+  {
+    name: "Larger storage",
+    subText: "Extra 1TB of cloud save",
+    isSelected: false,
+    monthly: {
+      price: 2,
+    },
+    yearly: {
+      price: 20,
+    },
+  },
+  {
+    name: "Customizable profile",
+    subText: "Custom theme on your profile",
+    isSelected: false,
+    monthly: {
+      price: 2,
+    },
+    yearly: {
+      price: 20,
     },
   },
 ];

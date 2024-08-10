@@ -1,7 +1,7 @@
 import InfoForm from "../components/forms/InfoForm";
 import HeaderText from "../components/HeaderText";
 
-export default function InfoPage() {
+export default function Info() {
   return (
     <>
       <HeaderText text="Personal Info" />

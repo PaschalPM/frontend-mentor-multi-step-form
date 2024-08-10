@@ -1,13 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-import { CurrentPageNumberCtxProvider } from './lib/contexts/currentPageNumber.ctx.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
+import { AppStepCtxProvider } from "./lib/contexts/appStep.ctx.tsx";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <CurrentPageNumberCtxProvider>
-    <App />
-    </CurrentPageNumberCtxProvider>
-  </StrictMode>,
-)
+    <AppStepCtxProvider>
+      <App />
+    </AppStepCtxProvider>
+  </StrictMode>
+);

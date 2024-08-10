@@ -1,9 +1,9 @@
 import { PropsWithChildren } from "react";
-import StepList from "../components/StepList";
-import { useCurrentPageNumberCtx } from "../lib/hooks";
+import StepList from "../components/listItems/StepListItem";
+import { useAppStepCtx } from "../lib/hooks";
 
 export default function AppLayout({ children }: PropsWithChildren) {
-  const { pageNumber } = useCurrentPageNumberCtx();
+  const { currentStep } = useAppStepCtx();
   return (
     <main
       className="md:h-auto md:py-12 md:grid md:place-content-center bg-magnolia"
@@ -22,14 +22,14 @@ export default function AppLayout({ children }: PropsWithChildren) {
               className="block md:hidden absolute h-full w-full object-cover z-10"
             ></img>
             <ul className="relative p-8 pt-12 md:pt-8 flex justify-center md:flex-col z-20 gap-4 md:gap-6">
-              <StepList num={1} text="Your Info" isActive={pageNumber === 1} />
+              <StepList num={1} text="Your Info" isActive={currentStep === 1} />
               <StepList
                 num={2}
                 text="Select Plan"
-                isActive={pageNumber === 2}
+                isActive={currentStep === 2}
               />
-              <StepList num={3} text="Add-Ons" isActive={pageNumber === 3} />
-              <StepList num={4} text="Summary" isActive={pageNumber === 4} />
+              <StepList num={3} text="Add-Ons" isActive={currentStep === 3} />
+              <StepList num={4} text="Summary" isActive={currentStep === 4} />
             </ul>
           </div>
         </div>

@@ -1,15 +1,15 @@
 import { useCallback } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 
 type Props = {
   text: "Monthly" | "Yearly";
-  selectedDuration: "monthly" | "yearly";
+  selectedType: "monthly" | "yearly";
 };
 
-export default function DurationSpan({ text, selectedDuration }: Props) {
+export default function TypeSpan({ text, selectedType }: Props) {
   const isSelected = useCallback(() => {
-    return selectedDuration === text.toLowerCase();
-  }, [selectedDuration]);
+    return selectedType === text.toLowerCase();
+  }, [selectedType]);
 
   return (
     <span

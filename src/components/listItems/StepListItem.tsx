@@ -1,4 +1,4 @@
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 
 type Props = {
   num: number;
@@ -6,7 +6,7 @@ type Props = {
   isActive?: boolean;
 };
 
-const StepList = ({ num, text, isActive = false }: Props) => {
+const StepListItem = ({ num, text, isActive = false }: Props) => {
   return (
     <li className="flex items-center gap-4">
       <div
@@ -33,4 +33,4 @@ const StepList = ({ num, text, isActive = false }: Props) => {
   );
 };
 
-export default StepList;
+export default StepListItem;

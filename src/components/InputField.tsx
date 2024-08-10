@@ -7,7 +7,7 @@ type Props = {
   name: string;
   placeholder: string;
   inputMode?: "text" | "email" | "tel";
-  register: UseFormRegister<Record<string, string>>;
+  register: UseFormRegister<any>;
   error?: FieldError;
   registerOptions: RegisterOptions;
 };

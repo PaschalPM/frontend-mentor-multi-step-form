@@ -1,13 +1,25 @@
-import PageSwitcher from "./components/PageSwitcher";
+import StepSwitcher from "./components/views/StepSwitcher";
+import ThankYou from "./components/views/ThankYou";
 import AppLayout from "./layouts/AppLayout";
-import { useCurrentPageNumberCtx } from "./lib/hooks";
+import { useAppStepCtx } from "./lib/hooks";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
-  const { pageNumber } = useCurrentPageNumberCtx();
+  const { currentStep } = useAppStepCtx();
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <StepSwitcher stepNum={currentStep} />,
+    },
+    {
+      path: "/thank-you",
+      element: <ThankYou/>
+    },
+  ]);
 
   return (
     <AppLayout>
-      <PageSwitcher pageNum={pageNumber} />
+      <RouterProvider router={router} />
     </AppLayout>
   );
 }
